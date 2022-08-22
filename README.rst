@@ -3,7 +3,7 @@ VDF sampler
 ===========
 
 
-.. image:: https://img.shields.io/pypi/v/vdf_sampler.svg
+.. image:: https://img.shields.io/pypi/v/lens_population_sampler.svg
         :target: https://pypi.org/project/lens-population-sampler/
 
 .. image:: https://img.shields.io/travis/vikramb1/vdf_sampler.svg
@@ -28,10 +28,10 @@ Example
 .. code-block:: python
 
         # import package
-        import vdf_sampler
+        from lens_population_sampler import vdf_sampler
 
         # produces 1000 samples with velocity dispersion between 100 and 200. The approximation uses 500 bins.
-        samples = sample_vdf(100, 200, resolution = 500, size = 1000)
+        samples = vdf_sampler.sample_vdf(100, 200, resolution = 500, size = 1000)
         print(samples)
 
 Credits
