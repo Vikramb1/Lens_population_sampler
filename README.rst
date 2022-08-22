@@ -6,11 +6,11 @@ VDF sampler
 .. image:: https://img.shields.io/pypi/v/lens_population_sampler.svg
         :target: https://pypi.org/project/lens-population-sampler/
 
-.. image:: https://img.shields.io/travis/vikramb1/vdf_sampler.svg
-        :target: https://travis-ci.com/vikramb1/vdf_sampler
-
-.. image:: https://readthedocs.org/projects/vdf-sampler/badge/?version=latest
-        :target: https://vdf-sampler.readthedocs.io/en/latest/?version=latest
+.. image:: https://img.shields.io/travis/vikramb1/lens-population-sampler.svg
+        :target: https://travis-ci.com/vikramb1/lens-population-sampler
+        
+.. image:: https://readthedocs.org/projects/lens-population-sampler/badge/?version=latest
+        :target: https://lens-population-sampler.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ Python package to sample from a velocity dispersion function of ellictical galax
 
 
 * Free software: MIT license
-* Documentation: https://vdf-sampler.readthedocs.io.
+* Documentation: https://lens-population-sampler.readthedocs.io.
 
 Example
 -------
