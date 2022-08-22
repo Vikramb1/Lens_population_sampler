@@ -12,7 +12,7 @@ To install VDF sampler, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install vdf_sampler
+    $ pip install lens-population-sampler
 
 This is the preferred method to install VDF sampler, as it will always install the most recent stable release.
 
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/vikramb1/vdf_sampler
+    $ git clone git://github.com/vikramb1/Lens_population_sampler
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/vikramb1/vdf_sampler/tarball/master
+    $ curl -OJL https://github.com/vikramb1/Lens_population_sampler/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/vikramb1/vdf_sampler
-.. _tarball: https://github.com/vikramb1/vdf_sampler/tarball/master
+.. _Github repo: https://github.com/vikramb1/Lens_population_sampler
+.. _tarball: https://github.com/vikramb1/Lens_population_sampler/tarball/master
