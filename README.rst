@@ -37,7 +37,7 @@ Example
 Credits
 -------
 
-This package uses the function derived from analysing the velocity dispersions of ellictical galaxies using the Sloan Digital Sky Survey in (`Choi, Park, & Vogeley (2007)  <https://ui.adsabs.harvard.edu/abs/2007ApJ...658..884C/abstract`_).  
+This package uses the function derived from analysing the velocity dispersions of ellictical galaxies using the Sloan Digital Sky Survey in (`Choi, Park, & Vogeley (2007)  <https://ui.adsabs.harvard.edu/abs/2007ApJ...658..884C/abstract>`_).  
 
 This package uses a modified class from hierArc_, created by `Simon Birrer`_.
 
