@@ -4,7 +4,7 @@ VDF sampler
 
 
 .. image:: https://img.shields.io/pypi/v/vdf_sampler.svg
-        :target: https://pypi.python.org/pypi/vdf_sampler
+        :target: https://pypi.org/project/lens-population-sampler/
 
 .. image:: https://img.shields.io/travis/vikramb1/vdf_sampler.svg
         :target: https://travis-ci.com/vikramb1/vdf_sampler
