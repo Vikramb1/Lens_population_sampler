@@ -1,1 +1,1 @@
-"""Unit test package for vdf_sampler."""
+"""Unit test package for lens_population_sampler."""

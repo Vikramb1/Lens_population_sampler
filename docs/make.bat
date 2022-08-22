@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=vdf_sampler
+set SPHINXPROJ=lens_population_sampler
 
 if "%1" == "" goto help
 

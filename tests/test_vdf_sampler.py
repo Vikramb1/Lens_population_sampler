@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Tests for `vdf_sampler` package."""
+"""Tests for `lens_population_sampler` package."""
 
 
 import unittest
