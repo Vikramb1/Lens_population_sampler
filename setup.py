@@ -31,7 +31,7 @@ setup(
     description="Python package to sample from a velocity dispersion function of ellictical galaxies in the local universe",
     entry_points={
         'console_scripts': [
-            'vdf_sampler=vdf_sampler.cli:main',
+            'lens_population_sampler=lens_population_sampler.cli:main',
         ],
     },
     install_requires=requirements,
