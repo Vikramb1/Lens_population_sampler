@@ -8,7 +8,7 @@ from click.testing import CliRunner
 
 from vdf_sampler import vdf_sampler
 from vdf_sampler import cli
-
+import numpy as np
 
 class TestVdf_sampler(unittest.TestCase):
     """Tests for `vdf_sampler` package."""
@@ -31,3 +31,8 @@ class TestVdf_sampler(unittest.TestCase):
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
+
+    def test_sample_drawing(self):
+        samples = vdf_sampler.sample_vdf(100, 200, size = 1000)
+        self.assertEqual(np.sum((100 <= samples) & (samples <= 200)), 1000)
+    

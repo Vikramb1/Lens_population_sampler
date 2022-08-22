@@ -31,7 +31,11 @@ Features
 Credits
 -------
 
+This package uses a modified class from hierArc_, created by `Simon Birrer`_.
+
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. _hierArc: https://github.com/sibirrer/hierArc
+.. _`Simon Birrer`: https://github.com/sibirrer
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
