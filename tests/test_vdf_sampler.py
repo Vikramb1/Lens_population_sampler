@@ -6,8 +6,8 @@
 import unittest
 from click.testing import CliRunner
 
-from vdf_sampler import vdf_sampler
-from vdf_sampler import cli
+from lens_population_sampler import vdf_sampler
+from lens_population_sampler import cli
 import numpy as np
 
 class TestVdf_sampler(unittest.TestCase):
