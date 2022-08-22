@@ -43,7 +43,7 @@ setup(
     packages=find_packages(include=['vdf_sampler', 'vdf_sampler.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/vikramb1/vdf_sampler',
+    url='https://github.com/vikramb1/lens_population_sampler',
     version='0.1.0',
     zip_safe=False,
 )
