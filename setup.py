@@ -39,7 +39,7 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='vdf_sampler',
-    name='vdf_sampler',
+    name='lens_population_sampler',
     packages=find_packages(include=['vdf_sampler', 'vdf_sampler.*']),
     test_suite='tests',
     tests_require=test_requirements,
