@@ -1,8 +1,17 @@
 version: 2.1
-
 jobs:
-  deploy-job:
+  build:
+    docker:
+      - image: cimg/base:2021.04
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "SO:ME:FIN:G:ER:PR:IN:T"
+      - checkout
+      - run:
+          name: The First Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
+      - run:
+          name: The Second Step
+          command: |
+            ls -al
+            echo '^^^The files in your repo^^^'
