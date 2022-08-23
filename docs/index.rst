@@ -1,4 +1,4 @@
-Welcome to VDF sampler's documentation!
+Welcome to Lens population sampler's documentation!
 ======================================
 
 .. toctree::
