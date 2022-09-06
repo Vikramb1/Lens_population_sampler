@@ -6,8 +6,8 @@ VDF sampler
 .. image:: https://img.shields.io/pypi/v/lens_population_sampler.svg
         :target: https://pypi.org/project/lens-population-sampler/
 
-.. image:: https://img.shields.io/travis/vikramb1/lens-population-sampler.svg
-        :target: https://travis-ci.com/vikramb1/lens-population-sampler
+.. image:: https://dl.circleci.com/status-badge/img/gh/Vikramb1/Lens_population_sampler/tree/main.svg?style=shield
+        :target: https://app.circleci.com/pipelines/github/Vikramb1/Lens_population_sampler
         
 .. image:: https://readthedocs.org/projects/lens-population-sampler/badge/?version=latest
         :target: https://lens-population-sampler.readthedocs.io/en/latest/?version=latest
