@@ -1,8 +1,10 @@
 """Main module."""
 
+from random import sample
 import numpy as np
 import scipy.special as special
 from scipy.interpolate import interp1d
+import scipy.integrate as integrate
 
 def sample_vdf(x_min, x_max, resolution=100, size=1):
     """Sample from velocity dispersion function of elliptical galaxies in the local universe [1]_.
@@ -24,12 +26,13 @@ def sample_vdf(x_min, x_max, resolution=100, size=1):
     Warnings
     --------
     Inverse cumulative dispersion function is approximated from the function 
-    using quadratic interpolation. The usre should specify the resolution to 
+    using quadratic interpolation. The user should specify the resolution to 
     satisfy their numerical accuracy.
 
     References
     ----------
     .. [1] Choi, Park and Vogeley, (2007), astro-ph/0611607, doi:10.1086/511060
+
     """
     x = np.linspace(0, 1000, resolution)
     vdf_func = lambda x: 8e-3*(x/161)**2.32*np.exp(-(x/161)**2.67)*(2.67/special.gamma(2.32/2.67))*(1/x)
@@ -37,7 +40,33 @@ def sample_vdf(x_min, x_max, resolution=100, size=1):
     pdf_sampler = PDFSampling(x, y[1:], x_min, x_max)
     return pdf_sampler.draw(size)
 
+#compute integral of vdf function beween lower and upper bound
+def compute_integral_vdf(x_min, x_max, resolution=100):
+    """Compute integral of vdf function beween lower and upper bound.
 
+    Parameters
+    ----------
+    xmin, xmax: int
+        Lower and upper bounds of random variable x. Samples are drawn uniformly from bounds.
+    resolution: int
+        Resolution of the inverse transform sampling spline. Default is 100.
+
+    Returns
+    -------
+    area: float
+        Integral of vdf function between lower and upper bounds.
+
+    Warnings
+    --------
+    The user should specify the resolution to 
+    satisfy their numerical accuracy.
+
+    """
+    x = np.linspace(0, 1000, resolution)
+    vdf_func = lambda x: 8e-3*(x/161)**2.32*np.exp(-(x/161)**2.67)*(2.67/special.gamma(2.32/2.67))*(1/x)
+    y = vdf_func(x)
+    area = integrate.quad(vdf_func, x_min, x_max)
+    return area[0]
 class PDFSampling(object):
     """
     class for approximations with a given pdf sample
